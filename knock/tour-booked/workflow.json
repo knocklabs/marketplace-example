@@ -1,0 +1,135 @@
+{
+  "categories": [
+    "transactional"
+  ],
+  "name": "Tour Booked",
+  "steps": [
+    {
+      "branches": [
+        {
+          "conditions": {
+            "all": [
+              {
+                "argument": "TRAVELER",
+                "operator": "equal_to",
+                "variable": "recipient.role"
+              }
+            ]
+          },
+          "name": "Traveler",
+          "steps": [
+            {
+              "channel_key": "in-app",
+              "channel_overrides": {},
+              "ref": "in_app_feed_1",
+              "template": {
+                "action_url": "{{ vars.app_url }}/tours/{{tour.id}}",
+                "markdown_body@": "in_app_feed_1/markdown_body.md"
+              },
+              "type": "channel"
+            },
+            {
+              "channel_key": "postmark",
+              "channel_overrides": {
+                "from_address": null,
+                "link_tracking": true,
+                "open_tracking": true
+              },
+              "ref": "email_1",
+              "template": {
+                "settings": {
+                  "layout_key": "default"
+                },
+                "subject": "You space on {{data.tour.name}} has been booked!",
+                "visual_blocks@": "email_1/visual_blocks.json"
+              },
+              "type": "channel"
+            },
+            {
+              "ref": "delay_1",
+              "settings": {
+                "delay_for": {
+                  "unit": "minutes",
+                  "value": 5
+                }
+              },
+              "type": "delay"
+            },
+            {
+              "channel_key": "postmark",
+              "channel_overrides": {
+                "from_address": null,
+                "link_tracking": true,
+                "open_tracking": true
+              },
+              "ref": "email_2",
+              "template": {
+                "settings": {
+                  "layout_key": "default"
+                },
+                "subject": "Your {{data.tour.name}} is about to start!",
+                "visual_blocks@": "email_2/visual_blocks.json"
+              },
+              "type": "channel"
+            }
+          ],
+          "terminates": false
+        },
+        {
+          "name": "Operator",
+          "steps": [
+            {
+              "ref": "batch_1",
+              "settings": {
+                "batch_execution_mode": "accumulate",
+                "batch_key": "data.tour.id",
+                "batch_order": "asc",
+                "batch_window": {
+                  "unit": "minutes",
+                  "value": 5
+                },
+                "batch_window_extension_limit": {
+                  "unit": "days",
+                  "value": 1
+                },
+                "batch_window_type": "sliding"
+              },
+              "type": "batch"
+            },
+            {
+              "channel_key": "postmark",
+              "channel_overrides": {
+                "from_address": null,
+                "link_tracking": true,
+                "open_tracking": true
+              },
+              "ref": "email_3",
+              "template": {
+                "settings": {
+                  "layout_key": "default"
+                },
+                "subject": "You have {{total_activities}} new {{total_activities | pluralize: \"booking\", \"bookings\" }}",
+                "visual_blocks@": "email_3/visual_blocks.json"
+              },
+              "type": "channel"
+            }
+          ],
+          "terminates": false
+        }
+      ],
+      "name": "Role Check",
+      "ref": "branch_1",
+      "type": "branch"
+    }
+  ],
+  "trigger_frequency": "every_trigger",
+  "__readonly": {
+    "environment": "development",
+    "key": "tour-booked",
+    "active": true,
+    "valid": true,
+    "created_at": "2025-02-11T19:07:03.755105Z",
+    "updated_at": "2025-02-11T21:03:38.373330Z",
+    "sha": "ReocC9VPn+pLeb62GyrHfUaFR9PzbMVsFYLLfFqH25M="
+  }
+}

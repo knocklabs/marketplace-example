@@ -1,0 +1,1 @@
+Hey **{{ recipient.name | default: "there" }}** 👋 - Congratulations on booking an adventure: {{tour.name}}. It looks like a fun one. Check out some of the details and get packing 🧳

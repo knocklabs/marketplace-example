@@ -1,0 +1,1 @@
+Hey **{{ recipient.name | default: "there" }}** 👋 - Welcome to Globe Wander.

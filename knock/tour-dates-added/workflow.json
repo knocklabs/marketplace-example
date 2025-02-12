@@ -1,0 +1,35 @@
+{
+  "categories": [
+    "transactional"
+  ],
+  "name": "Tour Dates Added",
+  "steps": [
+    {
+      "channel_key": "postmark",
+      "channel_overrides": {
+        "from_address": null,
+        "link_tracking": true,
+        "open_tracking": true
+      },
+      "ref": "email_1",
+      "template": {
+        "settings": {
+          "layout_key": "default"
+        },
+        "subject": "New tour dates have been added! ",
+        "visual_blocks@": "email_1/visual_blocks.json"
+      },
+      "type": "channel"
+    }
+  ],
+  "trigger_frequency": "every_trigger",
+  "__readonly": {
+    "environment": "development",
+    "key": "tour-dates-added",
+    "active": true,
+    "valid": true,
+    "created_at": "2025-02-11T20:16:02.746625Z",
+    "updated_at": "2025-02-11T21:18:28.946698Z",
+    "sha": "q2Csg88hn7+526T2cGJtOpXT0Ms0966YsNkII/jAfEM="
+  }
+}

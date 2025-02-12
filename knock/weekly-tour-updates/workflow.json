@@ -1,0 +1,38 @@
+{
+  "categories": [
+    "promotional"
+  ],
+  "name": "Weekly Tour Updates",
+  "steps": [
+    {
+      "ref": "http_fetch_1",
+      "settings": {
+        "method": "get",
+        "url": "http://localhost:3000/weekly-deals?userId={{recipient.id}}"
+      },
+      "type": "http_fetch"
+    },
+    {
+      "channel_key": "postmark",
+      "ref": "email_1",
+      "template": {
+        "settings": {
+          "layout_key": "default"
+        },
+        "subject": "New activity",
+        "visual_blocks@": "email_1/visual_blocks.json"
+      },
+      "type": "channel"
+    }
+  ],
+  "trigger_frequency": "every_trigger",
+  "__readonly": {
+    "environment": "development",
+    "key": "weekly-tour-updates",
+    "active": true,
+    "valid": true,
+    "created_at": "2025-02-12T00:04:00.216735Z",
+    "updated_at": "2025-02-12T00:05:01.210764Z",
+    "sha": "LKHVoBKnOACDNTbeLZuXE54BfLpQERXiZzQ3Cbm0rnw="
+  }
+}

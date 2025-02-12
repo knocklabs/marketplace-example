@@ -1,0 +1,45 @@
+{
+  "categories": [
+    "transactional"
+  ],
+  "name": "New User Signup",
+  "steps": [
+    {
+      "channel_key": "postmark",
+      "channel_overrides": {
+        "from_address": null,
+        "link_tracking": true,
+        "open_tracking": true
+      },
+      "ref": "email_1",
+      "template": {
+        "settings": {
+          "layout_key": "default"
+        },
+        "subject": "Thanks for choosing Globe Wander!",
+        "visual_blocks@": "email_1/visual_blocks.json"
+      },
+      "type": "channel"
+    },
+    {
+      "channel_key": "in-app",
+      "channel_overrides": {},
+      "ref": "in_app_feed_1",
+      "template": {
+        "action_url": "",
+        "markdown_body@": "in_app_feed_1/markdown_body.md"
+      },
+      "type": "channel"
+    }
+  ],
+  "trigger_frequency": "every_trigger",
+  "__readonly": {
+    "environment": "development",
+    "key": "new-user-signup",
+    "active": true,
+    "valid": true,
+    "created_at": "2025-02-11T19:09:55.253478Z",
+    "updated_at": "2025-02-11T19:18:24.229289Z",
+    "sha": "8nvIGrQNORU1KWWda05rQNZm60oQspQCsfv6q2AMQ7U="
+  }
+}
