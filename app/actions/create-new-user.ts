@@ -69,15 +69,15 @@ export async function createUser(data: SignupData) {
       redirect: false,
     });
 
-    // 4.5 Create user in Knock
-    await knock.users.identify(user.id, {
-      name: user.name as string,
-      email: user.email as string,
-      role: user.role as string,
-    });
-
     await knock.workflows.trigger("new-user-signup", {
-      recipients: [user.id],
+      recipients: [
+        {
+          id: user.id,
+          name: user.name as string,
+          email: user.email as string,
+          role: user.role as string,
+        },
+      ],
     });
 
     if (signInResult?.error) {

@@ -3,6 +3,7 @@ import { auth } from "@/auth";
 import { Knock } from "@knocklabs/node";
 import { revalidatePath } from "next/cache";
 const knock = new Knock(process.env.KNOCK_SECRET_API_KEY!);
+
 export async function createNewSubscription(tourId: string, userId: string) {
   "use server";
 
