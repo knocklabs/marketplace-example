@@ -1,6 +1,6 @@
 # Marketplace notifications with Knock
 
-This example app uses [Next.js](https://nextjs.org), [Prisma](https://www.prisma.io), and [Knock](https://knock.app) to build a two-sided marketplace for adventurers and tour operators.
+This example app uses [Next.js](https://nextjs.org), [Prisma](https://www.prisma.io), and [Knock](https://knock.app) to build a two-sided marketplace for adventurers and tour operators. This app was generated with [Cursor](https://cursor.sh) and [V0.dev](https://v0.dev/).
 
 ![Screenshot of the app](./images/home-page.png)
 
