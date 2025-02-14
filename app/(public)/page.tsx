@@ -13,7 +13,7 @@ export default async function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative h-[80vh] bg-gray-900">
+      <div className="relative h-[60vh] bg-gray-900">
         <div className="absolute inset-0">
           <img
             src="/hero-image.png" // You'll need to add a hero image
