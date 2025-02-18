@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { auth } from "@/auth";
-import { PrismaClient } from "@prisma/client";
+import { prisma } from "@/lib/prisma";
 import TravelerView from "./components/traveler-view";
 import OperatorView from "./components/operator-view";
-
-const prisma = new PrismaClient();
 
 export default async function DashboardPage() {
   const session = await auth();

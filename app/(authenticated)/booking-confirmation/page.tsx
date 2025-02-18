@@ -1,8 +1,6 @@
-import { PrismaClient } from "@prisma/client";
 import { notFound, redirect } from "next/navigation";
 import { auth } from "@/auth";
-
-const prisma = new PrismaClient();
+import { prisma } from "@/lib/prisma";
 
 export default async function BookingConfirmationPage({
   searchParams,
