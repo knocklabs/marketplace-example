@@ -4,6 +4,10 @@ This example app uses [Next.js](https://nextjs.org), [Prisma](https://www.prisma
 
 ![Screenshot of the app](./images/home-page.png)
 
+[✍️ Read the guide](https://knock.app/blog/marketplace-notifications-with-knock-and-nextjs)
+
+[📹 Watch the video](https://youtu.be/6h_mIWgjJFU)
+
 ## Install Dependencies
 
 First, install the dependencies:
@@ -96,3 +100,5 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Using this example app
