@@ -21,6 +21,6 @@ jobs:
         run: npm install -g @knocklabs/cli
 
       - name: Push Translations to Knock
-        run: knock translation push --all --translations-dir=./knock/translations --service-token=$KNOCK_SERVICE_TOKEN
+        run: knock translation push --commit --all --translations-dir=./knock/translations --service-token=$KNOCK_SERVICE_TOKEN
         env:
           KNOCK_SERVICE_TOKEN: ${{ secrets.KNOCK_SERVICE_TOKEN }}
