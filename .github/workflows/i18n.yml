@@ -31,5 +31,5 @@ jobs:
           git config --global user.email "actions@github.com"
           git add .
           git diff --quiet && git diff --staged --quiet || git commit -m "chore: rename translation files"
-          git push origin HEAD
+          git push origin HEAD:${{ github.ref_name }}
         continue-on-error: true
