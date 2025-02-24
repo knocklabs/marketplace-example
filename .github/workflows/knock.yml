@@ -1,0 +1,26 @@
+name: Push Translations to Knock
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  push_translations:
+    if: github.event.pull_request.merged == true
+    name: Push Translations to Knock
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Knock CLI
+        run: npm install -g @knocklabs/cli
+
+      - name: Push Translations to Knock
+        run: knock translations push --all --translations-dir=./knock/translations --service-token=$KNOCK_SERVICE_TOKEN
+        env:
+          KNOCK_SERVICE_TOKEN: ${{ secrets.KNOCK_SERVICE_TOKEN }}
