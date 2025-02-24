@@ -19,6 +19,8 @@ jobs:
 
       - name: Process Translations
         run: npm run translate # Adjust to your relevant command
+        env:
+          LINGODOTDEV_API_KEY: ${{ secrets.LINGODOTDEV_API_KEY }}
 
       - name: Commit and Push Changes
         run: |
