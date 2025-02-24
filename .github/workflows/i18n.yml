@@ -1,0 +1,38 @@
+name: i18n Knock Automation
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  prepare_translations:
+    name: Prepare Translation Files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0 # Ensure full branch history
+
+      - name: Install Dependencies
+        run: npm ci # Ensures a clean install using package-lock.json
+
+      - name: Process Translations
+        run: npm run translate # Adjust to your relevant command
+        env:
+          LINGODOTDEV_API_KEY: ${{ secrets.LINGODOTDEV_API_KEY }}
+
+      - name: Commit and Push Changes
+        env:
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git checkout "${BRANCH_NAME}"
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: rename translation files"
+          git push origin "${BRANCH_NAME}"
+        continue-on-error: true
