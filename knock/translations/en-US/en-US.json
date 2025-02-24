@@ -1,0 +1,8 @@
+{
+  "newUserSignup": {
+    "body": "Thanks for considering Globe Wander to scratch your itch to wander. You can check out all of our available tours on the homepage.",
+    "buttonText": "Check out your dashboard",
+    "greeting": "Hey **{{firstName}}** 👋 - ",
+    "subjectLine": "Thanks for choosing Globe Wander!"
+  }
+}

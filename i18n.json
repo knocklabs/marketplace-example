@@ -1,0 +1,12 @@
+{
+  "version": 1.3,
+  "locale": {
+    "source": "en-US",
+    "targets": ["es", "fr"]
+  },
+  "buckets": {
+    "json": {
+      "include": ["./knock/translations/[locale]/*.json"]
+    }
+  }
+}
