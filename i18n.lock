@@ -20,3 +20,9 @@ checksums:
     newUserSignup/subjectLine: 62cc97b8256e46755b64e08dddcfe01f
   a3401eb4404f2708ff2a5a907541a3e7:
     update: 3bc245d791a1980fa1c4b1aef82742b6
+    reasoning/no_payment: 4ded430b2e2bc0d0b987ee6099156680
+    reasoning/insufficient_funds: ee956fb41f2325c9c0df5b6f45c01fe2
+    reasoning/invalid_payment_method: 0757fb64cacf5fefe047bb6c47a821ae
+    reasoning/cancelled_by_customer: 9a255082897dc8cba279f70636fc2ac4
+    reasoning/cancelled_by_seller: 17a6c50d63fda3a0bc4e9bba11510ad4
+    reasoning/other: 79acaa6cd481262bea4e743a422529d2

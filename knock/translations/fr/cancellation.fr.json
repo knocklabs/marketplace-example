@@ -1,3 +1,11 @@
 {
-  "update": "Bonjour, nous sommes désolés mais votre commande a été annulée."
+  "update": "Désolé, mais votre commande a été annulée.",
+  "reasoning": {
+    "no_payment": "Nous n'avons pas pu traiter votre paiement.",
+    "insufficient_funds": "Vous n'avez pas assez de fonds sur votre compte.",
+    "invalid_payment_method": "Le mode de paiement que vous avez fourni n'est pas valide.",
+    "cancelled_by_customer": "Vous avez annulé la commande vous-même.",
+    "cancelled_by_seller": "Le vendeur a annulé la commande.",
+    "other": "Autre"
+  }
 }
