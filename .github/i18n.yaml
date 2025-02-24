@@ -1,9 +1,9 @@
 name: i18n Knock Automation
 
 on:
-  push:
+  pull_request:
     branches:
-      - "**" # Runs on push to any branch
+      - main
 
 jobs:
   prepare_translations:
