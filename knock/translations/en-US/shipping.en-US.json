@@ -1,3 +1,4 @@
 {
-  "update": "Hey, your tickets have shipped!"
+  "update": "Hey, your tickets have shipped!",
+  "issue": "Sorry, your tickets didn't ship. Please contact support."
 }
