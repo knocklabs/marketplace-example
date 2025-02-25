@@ -1,19 +1,19 @@
 #!/bin/bash
 
 # Define base translations directory
-NOC_TRANSLATIONS="./knock/translations"
+KNOCK_TRANSLATIONS="./knock/translations"
 
 # Define the base locale directory to ignore
 BASE_LOCALE="en-US"
 
 # Full path to the base locale directory
-BASE_DIR="$NOC_TRANSLATIONS/$BASE_LOCALE"
+BASE_DIR="$KNOCK_TRANSLATIONS/$BASE_LOCALE"
 
-echo "Base translations directory: $NOC_TRANSLATIONS"
+echo "Base translations directory: $KNOCK_TRANSLATIONS"
 echo "Ignoring base locale: $BASE_LOCALE"
 
-# Loop through all directories inside NOC_TRANSLATIONS
-for locale_dir in "$NOC_TRANSLATIONS"/*; do
+# Loop through all directories inside KNOCK_TRANSLATIONS
+for locale_dir in "$KNOCK_TRANSLATIONS"/*; do
   # Check if it's a directory and not the base locale
   if [[ -d "$locale_dir" && "$(basename "$locale_dir")" != "$BASE_LOCALE" ]]; then
     LOCALE=$(basename "$locale_dir")
