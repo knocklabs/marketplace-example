@@ -6,6 +6,6 @@
     "invalid_payment_method": "El método de pago que proporcionaste no es válido.",
     "cancelled_by_customer": "Tú mismo cancelaste el pedido.",
     "cancelled_by_seller": "El vendedor canceló el pedido.",
-    "other": "Otro motivo"
+    "other": "Otro"
   }
 }
