@@ -10,8 +10,6 @@
     "lint": "next lint",
     "seed": "NODE_OPTIONS='--loader ts-node/esm' node prisma/seed.ts",
     "destroy": "NODE_OPTIONS='--loader ts-node/esm' node prisma/destroy.ts",
-    "process-translations": "npx lingo.dev@latest i18n",
-    "format-translations": "./scripts/format-translations.sh",
     "translate": "npx lingo.dev@latest i18n && ./scripts/format-translations.sh"
   },
   "dependencies": {
