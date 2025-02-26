@@ -7,7 +7,7 @@
   "buckets": {
     "json": {
       "include": [
-        "./knock/translations/[locale]/*.json",
+        "./knock/translations/[locale]/[locale].json",
         "./knock/translations/[locale]/*.[locale].json"
       ]
     }
