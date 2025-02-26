@@ -1,12 +1,4 @@
 {
   "update": "Hey, your tickets have shipped!",
-  "issue": "Sorry, your tickets didn't ship. Please contact support.",
-  "reasoning": {
-    "no_payment": "We couldn't process your payment.",
-    "insufficient_funds": "You don't have enough funds in your account.",
-    "invalid_payment_method": "The payment method you provided is invalid.",
-    "cancelled_by_customer": "You cancelled the order yourself.",
-    "cancelled_by_seller": "The seller cancelled the order.",
-    "other": "Other"
-  }
+  "issue": "Sorry, your tickets didn't ship. Please contact support."
 }

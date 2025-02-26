@@ -10,21 +10,9 @@ checksums:
   8ce99f62c3c73f10770917d594b75054:
     update: 13e62d7fee29f624fb91579a11db8503
     issue: 58ccf51e573ce6ee528e138fd37b6471
-    reasoning/no_payment: 4ded430b2e2bc0d0b987ee6099156680
-    reasoning/insufficient_funds: ee956fb41f2325c9c0df5b6f45c01fe2
-    reasoning/invalid_payment_method: 0757fb64cacf5fefe047bb6c47a821ae
-    reasoning/cancelled_by_customer: 9a255082897dc8cba279f70636fc2ac4
-    reasoning/cancelled_by_seller: 17a6c50d63fda3a0bc4e9bba11510ad4
-    reasoning/other: 79acaa6cd481262bea4e743a422529d2
   1ed9f16a95a9626f41f8aabdfff754bd:
     update: 88036c10402e0e69dc6feb0c2e13ab5d
     issue: 6ab2857845edc0ab49c39fb17c438ec5
-    reasoning/no_payment: 4ded430b2e2bc0d0b987ee6099156680
-    reasoning/insufficient_funds: ee956fb41f2325c9c0df5b6f45c01fe2
-    reasoning/invalid_payment_method: 0757fb64cacf5fefe047bb6c47a821ae
-    reasoning/cancelled_by_customer: 9a255082897dc8cba279f70636fc2ac4
-    reasoning/cancelled_by_seller: 17a6c50d63fda3a0bc4e9bba11510ad4
-    reasoning/other: 79acaa6cd481262bea4e743a422529d2
   b93f5824dd0f8e35fc0d1ee7bb272642:
     newUserSignup/body: d4076f05890870ba283799c6babdfc28
     newUserSignup/buttonText: 2c45776f3af319242a1f60bbb7c4af63
@@ -32,9 +20,3 @@ checksums:
     newUserSignup/subjectLine: 62cc97b8256e46755b64e08dddcfe01f
   a3401eb4404f2708ff2a5a907541a3e7:
     update: 3bc245d791a1980fa1c4b1aef82742b6
-    reasoning/no_payment: 4ded430b2e2bc0d0b987ee6099156680
-    reasoning/insufficient_funds: ee956fb41f2325c9c0df5b6f45c01fe2
-    reasoning/invalid_payment_method: 0757fb64cacf5fefe047bb6c47a821ae
-    reasoning/cancelled_by_customer: 9a255082897dc8cba279f70636fc2ac4
-    reasoning/cancelled_by_seller: 17a6c50d63fda3a0bc4e9bba11510ad4
-    reasoning/other: 79acaa6cd481262bea4e743a422529d2
