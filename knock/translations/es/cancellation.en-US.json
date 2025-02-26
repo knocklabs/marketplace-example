@@ -1,11 +1,11 @@
 {
-  "update": "Lo sentimos, pero tu pedido ha sido cancelado.",
+  "update": "Hola, lamentamos informarte que tu pedido ha sido cancelado.",
   "reasoning": {
     "no_payment": "No pudimos procesar tu pago.",
     "insufficient_funds": "No tienes fondos suficientes en tu cuenta.",
     "invalid_payment_method": "El método de pago que proporcionaste no es válido.",
     "cancelled_by_customer": "Tú mismo cancelaste el pedido.",
     "cancelled_by_seller": "El vendedor canceló el pedido.",
-    "other": "Otro"
+    "other": "Otro motivo"
   }
 }
