@@ -1,0 +1,8 @@
+{
+  "newUserSignup": {
+    "body": "Merci d'avoir choisi Globe Wander pour assouvir votre envie de voyager. Vous pouvez découvrir tous nos circuits disponibles sur la page d'accueil.",
+    "buttonText": "Consultez votre tableau de bord",
+    "greeting": "Salut **{{firstName}}** 👋 - ",
+    "subjectLine": "Merci d'avoir choisi Globe Wander !"
+  }
+}
