@@ -20,3 +20,11 @@ checksums:
     newUserSignup/subjectLine: 62cc97b8256e46755b64e08dddcfe01f
   a3401eb4404f2708ff2a5a907541a3e7:
     update: 3bc245d791a1980fa1c4b1aef82742b6
+  c7aa463a463b10245d346ad01cc996b8:
+    update: 13e62d7fee29f624fb91579a11db8503
+    issue: 58ccf51e573ce6ee528e138fd37b6471
+  f9de2b1f72806c7f235028f346d3bce0:
+    update: 88036c10402e0e69dc6feb0c2e13ab5d
+    issue: 6ab2857845edc0ab49c39fb17c438ec5
+  408051fc561a90d57ad9630b9f07cc14:
+    update: 3bc245d791a1980fa1c4b1aef82742b6
