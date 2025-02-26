@@ -1,12 +1,4 @@
 {
   "update": "¡Hola, tu pago se realizó con éxito!",
-  "issue": "Lo sentimos, tu pago no se pudo procesar. Por favor, contacta con soporte.",
-  "reasoning": {
-    "no_payment": "No pudimos procesar tu pago.",
-    "insufficient_funds": "No tienes fondos suficientes en tu cuenta.",
-    "invalid_payment_method": "El método de pago que proporcionaste no es válido.",
-    "cancelled_by_customer": "Tú mismo cancelaste el pedido.",
-    "cancelled_by_seller": "El vendedor canceló el pedido.",
-    "other": "Otro"
-  }
+  "issue": "Lo sentimos, tu pago no se pudo procesar. Por favor, contacta con soporte."
 }

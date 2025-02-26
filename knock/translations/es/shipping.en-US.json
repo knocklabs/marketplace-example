@@ -1,12 +1,4 @@
 {
-  "update": "¡Hola, tus entradas han sido enviadas!",
-  "issue": "Lo sentimos, tus entradas no se enviaron. Por favor, contacta con soporte.",
-  "reasoning": {
-    "no_payment": "No pudimos procesar tu pago.",
-    "insufficient_funds": "No tienes fondos suficientes en tu cuenta.",
-    "invalid_payment_method": "El método de pago que proporcionaste no es válido.",
-    "cancelled_by_customer": "Tú mismo cancelaste el pedido.",
-    "cancelled_by_seller": "El vendedor canceló el pedido.",
-    "other": "Otro"
-  }
+  "update": "¡Hola, tus boletos han sido enviados!",
+  "issue": "Lo sentimos, tus boletos no se enviaron. Por favor, contacta al soporte."
 }
