@@ -1,8 +1,0 @@
-{
-  "newUserSignup": {
-    "body": "Gracias por considerar Globe Wander para satisfacer tu deseo de viajar. Puedes ver todos nuestros tours disponibles en la página de inicio.",
-    "buttonText": "Revisa tu panel de control",
-    "greeting": "Hola **{{firstName}}** 👋 - ",
-    "subjectLine": "¡Gracias por elegir Globe Wander!"
-  }
-}
