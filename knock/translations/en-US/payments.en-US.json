@@ -1,4 +1,11 @@
 {
   "update": "Hey, your payment was successful!",
-  "issue": "Sorry, your payment didn't go through. Please contact support."
+  "issue": "Sorry, your payment didn't go through. Please contact support.",
+  "reasoning": {
+    "no_payment": "We couldn't process your payment.",
+    "insufficient_funds": "You don't have enough funds in your account.",
+    "invalid_payment_method": "The payment method you provided is invalid.",
+    "cancelled_by_customer": "You cancelled the order yourself.",
+    "cancelled_by_seller": "The seller cancelled the order."
+  }
 }
